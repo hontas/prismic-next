@@ -1,0 +1,23 @@
+{
+  "name": "prismic-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "nodemon -x 'node --experimental-modules' server/index.mjs -w server",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^7.0.2",
+    "prismic-javascript": "^1.5.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
+  }
+}
