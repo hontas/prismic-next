@@ -2,6 +2,7 @@ import Prismic from 'prismic-javascript';
 import 'isomorphic-fetch';
 
 function linkResolver(results) {
+  console.log('results', results);
   const document = Array.isArray(results) ? results[0] : results;
   const { id, type, href } = document;
   return `/preview?id=${id}&type=${type}&href=${encodeURIComponent(href)}`;

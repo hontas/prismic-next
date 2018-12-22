@@ -3,7 +3,7 @@ import 'isomorphic-fetch';
 
 import Page from '../components/page';
 
-const baseUrl = typeof document === 'undefined' ? 'http://127.0.0.1:3000' : '';
+const baseUrl = typeof document === 'undefined' ? 'http://127.0.0.1:5000' : '';
 
 function getComponentByType(type) {
   switch (type) {
